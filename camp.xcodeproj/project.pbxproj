@@ -15,6 +15,9 @@
 		2363C58127D8785900A99F47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2363C57F27D8785900A99F47 /* LaunchScreen.storyboard */; };
 		2363C58C27D8785900A99F47 /* campTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363C58B27D8785900A99F47 /* campTests.swift */; };
 		2363C59727D8785900A99F47 /* campUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363C59627D8785900A99F47 /* campUITests.swift */; };
+		238E0C3527E1BAED00B2A513 /* gaidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238E0C3427E1BAED00B2A513 /* gaidoViewController.swift */; };
+		238E0C3A27E1BB3900B2A513 /* syousiaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238E0C3927E1BB3900B2A513 /* syousiaiViewController.swift */; };
+		238E0C3F27E1BC0900B2A513 /* gaido2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238E0C3E27E1BC0900B2A513 /* gaido2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		2363C59227D8785900A99F47 /* campUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = campUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2363C59627D8785900A99F47 /* campUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = campUITests.swift; sourceTree = "<group>"; };
 		2363C59827D8785900A99F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		238E0C3427E1BAED00B2A513 /* gaidoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gaidoViewController.swift; sourceTree = "<group>"; };
+		238E0C3927E1BB3900B2A513 /* syousiaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syousiaiViewController.swift; sourceTree = "<group>"; };
+		238E0C3E27E1BC0900B2A513 /* gaido2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gaido2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				2363C57627D8785800A99F47 /* SceneDelegate.swift */,
 				2363C57827D8785800A99F47 /* ViewController.swift */,
 				2363C57A27D8785800A99F47 /* Main.storyboard */,
+				238E0C3E27E1BC0900B2A513 /* gaido2ViewController.swift */,
+				238E0C3427E1BAED00B2A513 /* gaidoViewController.swift */,
+				238E0C3927E1BB3900B2A513 /* syousiaiViewController.swift */,
 				2363C57D27D8785900A99F47 /* Assets.xcassets */,
 				2363C57F27D8785900A99F47 /* LaunchScreen.storyboard */,
 				2363C58227D8785900A99F47 /* Info.plist */,
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				238E0C3F27E1BC0900B2A513 /* gaido2ViewController.swift in Sources */,
 				2363C57927D8785800A99F47 /* ViewController.swift in Sources */,
 				2363C57527D8785800A99F47 /* AppDelegate.swift in Sources */,
+				238E0C3A27E1BB3900B2A513 /* syousiaiViewController.swift in Sources */,
 				2363C57727D8785800A99F47 /* SceneDelegate.swift in Sources */,
+				238E0C3527E1BAED00B2A513 /* gaidoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
