@@ -121,6 +121,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="cBN-ZK-vMk"/>
+                    <connections>
+                        <outlet property="precipitation" destination="Jh6-ts-aOA" id="o6b-X2-USY"/>
+                        <outlet property="temperature" destination="pie-YC-QV9" id="d8N-FE-fPh"/>
+                        <outlet property="weather" destination="hJa-rn-Adk" id="UhX-Nm-XyN"/>
+                        <outlet property="windspeed" destination="HIE-6A-wWp" id="MIk-Me-56j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -320,7 +326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIc-jp-2ay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3217.3913043478265" y="93.75"/>
+            <point key="canvasLocation" x="3239" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EqZ-R9-akd">
