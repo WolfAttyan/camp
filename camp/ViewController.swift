@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         searchTemper(keyword: "searchWord")
     }
     
+
     @IBOutlet weak var searchText: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var weatherLabel: UILabel!
