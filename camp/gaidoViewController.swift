@@ -68,6 +68,14 @@ class gaidoViewController: UIViewController {
                       UIApplication.shared.open(url!)
     }
     }
+    
+    @IBAction func Q8(_ sender: Any){
+        let url =
+            URL(string:"https://car-me.jp/osusume/articles/18202")
+            if( UIApplication.shared.canOpenURL(url!) ) {
+                      UIApplication.shared.open(url!)
+    }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
