@@ -1,0 +1,8 @@
+Target dependency graph (4 targets)
+Alamofire in Pods, no dependencies
+Pods-camp in Pods, depends on:
+Alamofire in Pods (explicit)
+Pods-camp-campUITests in Pods, depends on:
+Alamofire in Pods (explicit)
+Pods-campTests in Pods, depends on:
+Pods-camp in Pods (explicit)
