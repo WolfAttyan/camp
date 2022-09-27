@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var windspeedLavel: UILabel!
     @IBOutlet weak var precipitationLabel: UILabel!
+    @IBOutlet weak var mainText: UILabel!
     
     func searchBarSearchButtonClicked(_ srarchBar: UISearchBar) {
         
@@ -48,10 +49,10 @@ class ViewController: UIViewController {
                 print(data.hourly.temperature_2m[0])
                 print(data.hourly.precipitation[0])
                 // weathercodeの先頭を取得する
-                let weathercode = data.hourly.weathercode[0]
-                let precipitation = data.hourly.precipitation[0]
-                let temperature = data.hourly.temperature_2m[0]
-                let windspeed = data.hourly.windspeed_10m[0]
+                let weathercode = data.hourly.weathercode[144]
+                let precipitation = data.hourly.precipitation[144]
+                let temperature = data.hourly.temperature_2m[144]
+                let windspeed = data.hourly.windspeed_10m[144]
                 // weathercodeの先頭が1だったら
                 
                 if  weathercode == 0 {
@@ -165,6 +166,23 @@ class ViewController: UIViewController {
                 
                 self.windspeedLavel.text = "\(String(windspeed))m/s"
                 
+                if weathercode >= 0 {
+                    if weathercode <= 3 {
+                        if precipitation >= 0.0 {
+                            if precipitation <= 10.0 {
+                                   if windspeed >= 0 {
+                                       if windspeed <= 5.0 {
+                                           if temperature  <= 25 {
+                                                 if temperature >= 15{
+                                self.mainText.text = "キャンプびより！"
+                                }
+                            }
+                        }
+                    }
+                }
+           }
+        }
+ }
                 
                 
                  case.failure(let error): // 失敗した時
