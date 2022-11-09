@@ -170,19 +170,19 @@ class ViewController: UIViewController {
                     if weathercode <= 3 {
                         if precipitation >= 0.0 {
                             if precipitation <= 10.0 {
-                                   if windspeed >= 0 {
-                                       if windspeed <= 5.0 {
-                                           if temperature  <= 25 {
-                                                 if temperature >= 15{
-                                self.mainText.text = "キャンプびより！"
-                                }
-                            }
+                               if windspeed >= 0 {
+                                  if windspeed <= 5.0 {
+                                    if temperature  <= 25 {
+                                        if temperature >= 15{
+                               self.mainText.text = "キャンプびより！"
                         }
+                       }
+                      }
+                     }
                     }
-                }
-           }
-        }
- }
+                   }
+                  }
+                 }
                 
                 
                  case.failure(let error): // 失敗した時

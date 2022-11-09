@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,7 +18,7 @@
 		2363C59727D8785900A99F47 /* campUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363C59627D8785900A99F47 /* campUITests.swift */; };
 		238E0C3527E1BAED00B2A513 /* gaidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238E0C3427E1BAED00B2A513 /* gaidoViewController.swift */; };
 		238E0C3A27E1BB3900B2A513 /* syousiaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238E0C3927E1BB3900B2A513 /* syousiaiViewController.swift */; };
-		238E0C3F27E1BC0900B2A513 /* gaido2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238E0C3E27E1BC0900B2A513 /* gaido2ViewController.swift */; };
+		4B8C623B28FE72ED00168410 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8C623A28FE72ED00168410 /* settingViewController.swift */; };
 		C012F9299F9FCFD2F5761D1F /* Pods_campTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DCE01EF14AF90E42CDAB9C /* Pods_campTests.framework */; };
 		DD546BDC8061F172BCD74735 /* Pods_camp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8370FCF524EDBA7BD096DFEF /* Pods_camp.framework */; };
 /* End PBXBuildFile section */
@@ -58,9 +58,10 @@
 		2363C59827D8785900A99F47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		238E0C3427E1BAED00B2A513 /* gaidoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gaidoViewController.swift; sourceTree = "<group>"; };
 		238E0C3927E1BB3900B2A513 /* syousiaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = syousiaiViewController.swift; sourceTree = "<group>"; };
-		238E0C3E27E1BC0900B2A513 /* gaido2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gaido2ViewController.swift; sourceTree = "<group>"; };
 		3900616D2A4D12362C0CF05B /* Pods-camp-campUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camp-campUITests.release.xcconfig"; path = "Target Support Files/Pods-camp-campUITests/Pods-camp-campUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D1072867F4EB39306F7C67F /* Pods_camp_campUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camp_campUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B8C623628FE725B00168410 /* camp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "camp-Bridging-Header.h"; sourceTree = "<group>"; };
+		4B8C623A28FE72ED00168410 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		62DCE01EF14AF90E42CDAB9C /* Pods_campTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_campTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8370FCF524EDBA7BD096DFEF /* Pods_camp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4E9C19B65C252B9B09FA8A /* Pods-camp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camp.release.xcconfig"; path = "Target Support Files/Pods-camp/Pods-camp.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,12 +127,13 @@
 				2363C57627D8785800A99F47 /* SceneDelegate.swift */,
 				2363C57827D8785800A99F47 /* ViewController.swift */,
 				2363C57A27D8785800A99F47 /* Main.storyboard */,
-				238E0C3E27E1BC0900B2A513 /* gaido2ViewController.swift */,
 				238E0C3427E1BAED00B2A513 /* gaidoViewController.swift */,
 				238E0C3927E1BB3900B2A513 /* syousiaiViewController.swift */,
+				4B8C623A28FE72ED00168410 /* settingViewController.swift */,
 				2363C57D27D8785900A99F47 /* Assets.xcassets */,
 				2363C57F27D8785900A99F47 /* LaunchScreen.storyboard */,
 				2363C58227D8785900A99F47 /* Info.plist */,
+				4B8C623628FE725B00168410 /* camp-Bridging-Header.h */,
 			);
 			path = camp;
 			sourceTree = "<group>";
@@ -164,7 +166,6 @@
 				E7E94D1D41096B98F47B05B9 /* Pods-campTests.debug.xcconfig */,
 				00F21D1BB2977420E7A753D8 /* Pods-campTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -250,6 +251,7 @@
 				TargetAttributes = {
 					2363C57027D8785800A99F47 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1340;
 					};
 					2363C58627D8785900A99F47 = {
 						CreatedOnToolsVersion = 12.4;
@@ -416,12 +418,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				238E0C3F27E1BC0900B2A513 /* gaido2ViewController.swift in Sources */,
 				2363C57927D8785800A99F47 /* ViewController.swift in Sources */,
 				2363C57527D8785800A99F47 /* AppDelegate.swift in Sources */,
 				238E0C3A27E1BB3900B2A513 /* syousiaiViewController.swift in Sources */,
 				2363C57727D8785800A99F47 /* SceneDelegate.swift in Sources */,
 				238E0C3527E1BAED00B2A513 /* gaidoViewController.swift in Sources */,
+				4B8C623B28FE72ED00168410 /* settingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = camp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -606,6 +609,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RyotaKishimoto.camp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "camp/camp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -617,6 +622,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = camp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -625,6 +631,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = RyotaKishimoto.camp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "camp/camp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
