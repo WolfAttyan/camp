@@ -21,27 +21,24 @@ class settingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+       // let saveData: UserDefaults = UserDefaults.standard
+        
+      //  saveData.set(mondaybutton, forKey: "あー")
+      //   = saveData.object(forKey: "あー")
 
-        let dt = Date()
-        let dateFormatter = DateFormatter()
-
-        // DateFormatter を使用して書式とロケールを指定する
-        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
-
-        print(dateFormatter.string(from: dt))
+      
          
         // Do any additional setup after loading the view.
       
     }
     
-    @IBAction func monday (){
+   // @IBAction func monday (){
         //月曜日設定時に、現在が火曜日だったら六日後の情報を持ってくる
-        if (DateFormatter == ){
+        //if (DateFormatter == ){
         
-        }
-    }
-
+       // }
+   // }
+}
     /*
     // MARK: - Navigation
 
@@ -52,4 +49,3 @@ class settingViewController: UIViewController {
     }
     */
 
-}

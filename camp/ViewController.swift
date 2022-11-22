@@ -37,7 +37,17 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    
     func searchTemper(keyword: String){
+        let dt = Date()
+        let dateFormatter = DateFormatter()
+
+        // DateFormatter を使用して書式とロケールを指定する
+        dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMdHms", options: 0, locale: Locale(identifier: "ja_JP"))
+
+        print(dateFormatter.string(from: dt))
+        
         let url = "https://api.open-meteo.com/v1/forecast?latitude=35.6785&longitude=139.6823&hourly=temperature_2m,precipitation,weathercode,windspeed_10m&windspeed_unit=ms"
         AF
             .request(url) // URLにリクエストを送る(情報ちょうだい)
