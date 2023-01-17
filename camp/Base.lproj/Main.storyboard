@@ -12,13 +12,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pY-yC-nUd">
-                                <rect key="frame" x="63" y="111" width="289" height="228"/>
+                                <rect key="frame" x="63" y="130" width="289" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.83349806070327759" green="0.95385473966598511" blue="0.94531768560409546" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="labelColor"/>
@@ -116,23 +116,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="dMq-eg-h9u">
+                                <rect key="frame" x="336" y="68" width="58" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50601282019413663" green="0.98466829909491782" blue="0.15908971920751694" alpha="0.25893147786458331" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="設定"/>
+                                <connections>
+                                    <segue destination="IPG-h2-VHt" kind="show" id="NEN-zS-qu9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cBN-ZK-vMk">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="E0Y-XJ-MJJ">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="3s0-aQ-05i">
-                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="設定"/>
-                            </button>
-                            <connections>
-                                <segue destination="IPG-h2-VHt" kind="show" id="QKu-Us-eIl"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cBN-ZK-vMk"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mainText" destination="9pY-yC-nUd" id="zn6-qD-kAB"/>
                         <outlet property="precipitationLabel" destination="Jh6-ts-aOA" id="o6b-X2-USY"/>
@@ -143,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="94"/>
+            <point key="canvasLocation" x="886.95652173913049" y="93.75"/>
         </scene>
         <!--Gaido View Controller-->
         <scene sceneID="22i-Uh-EZz">
@@ -339,10 +339,10 @@
             </objects>
             <point key="canvasLocation" x="1774" y="94"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--Settinghome View Controller-->
         <scene sceneID="ARi-GQ-oK9">
             <objects>
-                <viewController id="IPG-h2-VHt" customClass="settingViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IPG-h2-VHt" customClass="SettinghomeViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gaV-bB-ino">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -353,7 +353,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="適正日の設定"/>
                                 <connections>
-                                    <segue destination="Q84-Lc-KQl" kind="presentation" id="ssG-sC-8X0"/>
+                                    <segue destination="Q84-Lc-KQl" kind="showDetail" id="wRC-dr-Y2h"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -362,7 +362,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7Xl-Rt-sFg"/>
                     <connections>
-                        <outlet property="settingbutton" destination="H3q-7G-FjC" id="diP-uD-pfL"/>
+                        <outlet property="settingbutton" destination="H3q-7G-FjC" id="RzM-lR-RPk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffZ-9k-z4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -390,7 +390,7 @@
         <!--Setting View Controller-->
         <scene sceneID="xDx-WR-Pcz">
             <objects>
-                <viewController id="Q84-Lc-KQl" customClass="settingViewController" sceneMemberID="viewController">
+                <viewController id="Q84-Lc-KQl" customClass="settingViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jHh-BO-2Qz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -451,22 +451,13 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="月"/>
                                 <connections>
-                                    <action selector="monday" destination="Q84-Lc-KQl" eventType="touchUpInside" id="8aD-ha-6J9"/>
+                                    <action selector="monday" destination="Q84-Lc-KQl" eventType="touchUpInside" id="IPs-nm-4uy"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NYn-pn-1vx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="fridaybutton" destination="Tcf-Bk-7uZ" id="dnb-dw-tZP"/>
-                        <outlet property="mondaybutton" destination="m7n-ky-S65" id="69Z-U1-TGk"/>
-                        <outlet property="saturdaybutton" destination="aB2-b2-Dh7" id="tck-q1-TL4"/>
-                        <outlet property="sundaybutton" destination="jeF-tY-cQD" id="rDF-FV-33Q"/>
-                        <outlet property="thursdaybutton" destination="C4x-az-Q5q" id="OmM-Pe-uDj"/>
-                        <outlet property="tuesdaybutton" destination="45j-lq-SIU" id="Rkk-jB-9Oy"/>
-                        <outlet property="wednesdaybutton" destination="lAO-lm-44O" id="pgp-XL-Ncp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCu-rK-DB0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

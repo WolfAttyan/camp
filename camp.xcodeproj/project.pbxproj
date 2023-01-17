@@ -19,6 +19,7 @@
 		238E0C3527E1BAED00B2A513 /* gaidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238E0C3427E1BAED00B2A513 /* gaidoViewController.swift */; };
 		238E0C3A27E1BB3900B2A513 /* syousiaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238E0C3927E1BB3900B2A513 /* syousiaiViewController.swift */; };
 		4B8C623B28FE72ED00168410 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8C623A28FE72ED00168410 /* settingViewController.swift */; };
+		4BC29A43296E8C3300582438 /* SettinghomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC29A42296E8C3300582438 /* SettinghomeViewController.swift */; };
 		C012F9299F9FCFD2F5761D1F /* Pods_campTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DCE01EF14AF90E42CDAB9C /* Pods_campTests.framework */; };
 		DD546BDC8061F172BCD74735 /* Pods_camp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8370FCF524EDBA7BD096DFEF /* Pods_camp.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,7 @@
 		3D1072867F4EB39306F7C67F /* Pods_camp_campUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camp_campUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8C623628FE725B00168410 /* camp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "camp-Bridging-Header.h"; sourceTree = "<group>"; };
 		4B8C623A28FE72ED00168410 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
+		4BC29A42296E8C3300582438 /* SettinghomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettinghomeViewController.swift; sourceTree = "<group>"; };
 		62DCE01EF14AF90E42CDAB9C /* Pods_campTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_campTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8370FCF524EDBA7BD096DFEF /* Pods_camp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_camp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4E9C19B65C252B9B09FA8A /* Pods-camp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-camp.release.xcconfig"; path = "Target Support Files/Pods-camp/Pods-camp.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				238E0C3427E1BAED00B2A513 /* gaidoViewController.swift */,
 				238E0C3927E1BB3900B2A513 /* syousiaiViewController.swift */,
 				4B8C623A28FE72ED00168410 /* settingViewController.swift */,
+				4BC29A42296E8C3300582438 /* SettinghomeViewController.swift */,
 				2363C57D27D8785900A99F47 /* Assets.xcassets */,
 				2363C57F27D8785900A99F47 /* LaunchScreen.storyboard */,
 				2363C58227D8785900A99F47 /* Info.plist */,
@@ -420,6 +423,7 @@
 			files = (
 				2363C57927D8785800A99F47 /* ViewController.swift in Sources */,
 				2363C57527D8785800A99F47 /* AppDelegate.swift in Sources */,
+				4BC29A43296E8C3300582438 /* SettinghomeViewController.swift in Sources */,
 				238E0C3A27E1BB3900B2A513 /* syousiaiViewController.swift in Sources */,
 				2363C57727D8785800A99F47 /* SceneDelegate.swift in Sources */,
 				238E0C3527E1BAED00B2A513 /* gaidoViewController.swift in Sources */,

@@ -8,7 +8,6 @@
 import UIKit
 import Alamofire
 
-
 class ViewController: UIViewController {
     
     // アプリが起動した時
@@ -18,6 +17,12 @@ class ViewController: UIViewController {
         searchTemper(keyword: "searchWord")
     }
     
+    var n : Int! = 144
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        searchTemper(keyword: "searchWord")
+    }
 
     @IBOutlet weak var searchText: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -48,6 +53,7 @@ class ViewController: UIViewController {
 
         print(dateFormatter.string(from: dt))
         
+        
         let url = "https://api.open-meteo.com/v1/forecast?latitude=35.6785&longitude=139.6823&hourly=temperature_2m,precipitation,weathercode,windspeed_10m&windspeed_unit=ms"
         AF
             .request(url) // URLにリクエストを送る(情報ちょうだい)
@@ -59,10 +65,10 @@ class ViewController: UIViewController {
                 print(data.hourly.temperature_2m[0])
                 print(data.hourly.precipitation[0])
                 // weathercodeの先頭を取得する
-                let weathercode = data.hourly.weathercode[144]
-                let precipitation = data.hourly.precipitation[144]
-                let temperature = data.hourly.temperature_2m[144]
-                let windspeed = data.hourly.windspeed_10m[144]
+                let weathercode = data.hourly.weathercode[self.n]
+                let precipitation = data.hourly.precipitation[self.n]
+                let temperature = data.hourly.temperature_2m[self.n]
+                let windspeed = data.hourly.windspeed_10m[self.n]
                 // weathercodeの先頭が1だったら
                 
                 if  weathercode == 0 {
@@ -182,8 +188,8 @@ class ViewController: UIViewController {
                             if precipitation <= 10.0 {
                                if windspeed >= 0 {
                                   if windspeed <= 5.0 {
-                                    if temperature  <= 25 {
-                                        if temperature >= 15{
+                                    if temperature  <= 18 {
+                                        if temperature >= 7{
                                self.mainText.text = "キャンプびより！"
                         }
                        }
