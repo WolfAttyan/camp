@@ -20,7 +20,7 @@ class settingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("aaa")
+        print("あー")
         
 
         
@@ -63,17 +63,53 @@ class settingViewController: UIViewController {
    @IBAction func monday (){
         print(getDateString())
        
-       if(getDateString() == "水" ){
+       if(getDateString() == "月" ){
+           let preVC = self.storyboard?.instantiateViewController(withIdentifier:"ViewController") as! ViewController
+           preVC.n = 168
+           self.present(preVC, animated: true, completion: nil)
+       }
+       
+       if(getDateString() == "火" ){
 
-           let preNC = self.presentingViewController as! UINavigationController
-           let preVC = preNC.viewControllers[preNC.viewControllers.count - 2] as! ViewController
-           preVC.n = 120
+//           let preNC = self.presentingViewController as! UINavigationController
+           let preVC = self.storyboard?.instantiateViewController(withIdentifier:"ViewController") as! ViewController
+           preVC.n = 144
 //           let nextVC = self.storyboard?.instantiateViewController(withIdentifier:"toViewController") as! ViewController
 //           nextVC.n = 120
            self.present(preVC, animated: true, completion: nil)
        }
        
+       if(getDateString() == "水" ){
+           let preVC = self.storyboard?.instantiateViewController(withIdentifier:"ViewController") as! ViewController
+           preVC.n = 120
+           self.present(preVC, animated: true, completion: nil)
+       }
        
+       if(getDateString() == "木" ){
+           let preVC = self.storyboard?.instantiateViewController(withIdentifier:"ViewController") as! ViewController
+           preVC.n = 96
+           self.present(preVC, animated: true, completion: nil)
+       }
+       
+       if(getDateString() == "金" ){
+           let preVC = self.storyboard?.instantiateViewController(withIdentifier:"ViewController") as! ViewController
+           preVC.n = 72
+           self.present(preVC, animated: true, completion: nil)
+       }
+       
+       if(getDateString() == "土" ){
+           let preVC = self.storyboard?.instantiateViewController(withIdentifier:"ViewController") as! ViewController
+           preVC.n = 48
+           self.present(preVC, animated: true, completion: nil)
+       }
+       
+       if(getDateString() == "日" ){
+           let preVC = self.storyboard?.instantiateViewController(withIdentifier:"ViewController") as! ViewController
+           preVC.n = 24
+           self.present(preVC, animated: true, completion: nil)
+       }
+       
+//       preNC.viewControllers[preNC.viewControllers.count - 2] as! ViewController
 }
     /*
     // MARK: - Navigation

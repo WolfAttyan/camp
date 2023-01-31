@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ViewController" storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -342,7 +342,7 @@
         <!--Settinghome View Controller-->
         <scene sceneID="ARi-GQ-oK9">
             <objects>
-                <viewController id="IPG-h2-VHt" customClass="SettinghomeViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="setting" id="IPG-h2-VHt" customClass="SettinghomeViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gaV-bB-ino">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -390,7 +390,7 @@
         <!--Setting View Controller-->
         <scene sceneID="xDx-WR-Pcz">
             <objects>
-                <viewController id="Q84-Lc-KQl" customClass="settingViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="youbi" id="Q84-Lc-KQl" customClass="settingViewController" customModule="camp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jHh-BO-2Qz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
